@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="test-card">
+            <div class="card-header">
+              <img src="images/testimonial-1.jpg">
+              <div class="test-title">
+                  <h3>Client Name</h3>
+                  <h5 class="h5">Profession</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic a consectetur, cum ex itaque ea at eaque quod rerum.</p>
+            </div>
+          </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="test-card">
+            <div class="card-header">
+              <img src="images/testimonial-2.jpg">
+              <div class="test-title">
+                  <h3>Client Name</h3>
+                  <h5 class="h5">Profession</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic a consectetur, cum ex itaque ea at eaque quod rerum.</p>
+            </div>
+          </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="test-card">
+            <div class="card-header">
+              <img src="images/testimonial-3.jpg">
+              <div class="test-title">
+                  <h3>Client Name</h3>
+                  <h5 class="h5">Profession</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic a consectetur, cum ex itaque ea at eaque quod rerum.</p>
+            </div>
+          </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="test-card">
+            <div class="card-header">
+              <img src="images/testimonial-4.jpg">
+              <div class="test-title">
+                  <h3>Client Name</h3>
+                  <h5 class="h5">Profession</h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic a consectetur, cum ex itaque ea at eaque quod rerum.</p>
+            </div>
+          </div>
+    </div>
+      
+    </div>
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: false,
+      slidesPerGroupSkip: 1,
+      loop: false,
+      grabCursor: true,
+      keyboard: {
+      enabled: true,
+      },
+      breakpoints: {
+     0: {
+       slidesPerView: 1,
+     
+     },
+     768: {
+       slidesPerView: 2,
+      
+     },
+     991: {
+       slidesPerView: 3,
+     
+     },
+    },
+    autoplay: {
+         delay: 2500,
+        disableOnInteraction:false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>   
+</body>
+</html>

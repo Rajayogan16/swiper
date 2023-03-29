@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.swiper {
+    width: 90%;
+    height: 100%;
+    margin-top: 10%;
+
+  }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  
+}
+
+
+
+.test-card{
+    
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.test-card p{
+    font-size: 16px;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.h5{
+    color:var(--secondary-color);
+    opacity: 0.5;
+    font-size: small;
+    text-transform: uppercase;
+    font-family:var(--font-family1);
+    font-size: 14px;
+}
+.card-header{
+    display:flex;
+    align-items: center;
+    line-height: normal;
+    background-color: var(--base3-color);
+    color: var(--base1-color);
+}
+
+.test-title{
+    color: var(--base1-color);
+    margin-left: 5%;
+}
+
+.test-title h3{
+    font-size: 24px;
+}
+
+.swiper-navBtn {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #000;
+  }
+  
